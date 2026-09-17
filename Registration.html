@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Registration.css" />
+  </head>
+  <body>
+    <main class="container">
+      <form>
+        <h1 class="title center">Registration Form</h1>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p class="description center">
+            FIll in the form to give more information about you
+          </p>
+          <label for="first-name">First Name:</label>
+          <input
+            id="first-name"
+            type="text"
+            name="first-name"
+            placeholder="Enter your first name"
+            required
+          />
+          <label for="second-name">Second Name:</label>
+          <input
+            type="text"
+            name="second-name"
+            id="second-name"
+            placeholder="Enter your second name"
+            required
+          />
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="10"
+            max="50"
+            placeholder="Enter your age"
+            min="10"
+            max="100"
+            value="18"
+          />
+        </fieldset>
+        <hr />
+        <fieldset>
+          <legend>Contact Information</legend>
+          <p class="description center">
+            Provide your email so we can feetback to you the result and
+            information about the registration
+          </p>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+        </fieldset>
+        <hr />
+        <fieldset>
+          <legend>Position</legend>
+          <p class="description center">
+            Choose here the post your are play in the most
+          </p>
+          <input
+            class="radio-btn"
+            type="radio"
+            id="deffender"
+            value="Deffender"
+            name="radio"
+          />
+          <label class="radio-label" for="deffender">Deffender</label>
+          <input
+            class="radio-btn"
+            type="radio"
+            id="mid-player"
+            value="Mid Player"
+            name="radio"
+          />
+          <label class="radio-label" for="mid-player">Mid Player</label>
+          <input
+            class="radio-btn"
+            type="radio"
+            id="forward"
+            value="Forward"
+            name="radio"
+          />
+          <label class="radio-label" for="forward">Forward</label>
+        </fieldset>
+        <hr />
+        <fieldset>
+          <legend>Training Sessions</legend>
+          <p class="description center">
+            For more information about the training sessions
+            <a href="URL" target="_blank">Click Here.</a>
+          </p>
+          <p class="description center">
+            To accept the terms and conditions
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="terms-conditions"
+              required
+            />
+            <label class="click-label" for="terms-conditions"
+              >Click Here.</label
+            >
+          </p>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
